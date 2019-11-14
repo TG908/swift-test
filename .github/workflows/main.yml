@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@latest
+    - uses: TG908/setup-swift@v1-release
+      with:
+        version: '5.0.2'
+        platform: 'ubuntu18.04'
+    - run: swift build
+
