@@ -9,7 +9,7 @@ jobs:
 
     steps: 
     - uses: actions/checkout@v1
-    - uses: TG908/setup-swift@v0
+    - uses: TG908/setup-swift@v0.1
       with:
         version: '5.0.2'
         platform: 'ubuntu18.04'
