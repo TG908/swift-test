@@ -15,5 +15,5 @@ jobs:
         platform: 'ubuntu18.04'
     - run: |
         echo $PATH
-        which swift
+        swift --version
 
