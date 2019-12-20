@@ -13,5 +13,7 @@ jobs:
       with:
         version: '5.0.2'
         platform: 'ubuntu18.04'
-    - run: swift build
+    - run: |
+        echo $PATH
+        swift build
 
