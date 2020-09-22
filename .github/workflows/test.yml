@@ -1,0 +1,14 @@
+name: Test
+
+on:
+  workflow_dispatch: # on button click
+
+jobs:
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: tgymnich/test@v0.0.1
+        with:
+          milliseconds: 100
